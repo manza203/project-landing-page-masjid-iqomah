@@ -4,7 +4,7 @@
 Aplikasi ini adalah portal komunitas masjid kampus modern yang interaktif, bersih, dan ramah jemaah. Menghilangkan gaya kaku majalah cetak, digantikan dengan layout card modern yang dinamis dengan sudut melengkung halus.
 
 *   **Design Vibe:** Modern, Welcoming, Dynamic Islamic Community.
-*   **Geometry:** Menggunakan `{rounded.lg}` (8px) untuk tombol dan kartu (tidak lagi tajam 0px).
+*   **Geometry:** Menggunakan `{rounded.lg}` (8px) untuk tombol dan kartu (tidak lagi tajam 0px)
 
 ## 2. Color Tokens (Fresh Forest Palette)
 - `bg-canvas`: #ffffff (Clean White)
