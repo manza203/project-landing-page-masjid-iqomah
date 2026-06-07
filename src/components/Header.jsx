@@ -97,7 +97,7 @@ export default function Header() {
           )}
 
           <a
-            href="https://forms.google.com"
+            href="https://forms.gle/zfLuBvJXD4837w6s6"
             target="_blank"
             rel="noreferrer"
             className={`text-[15px] font-extrabold uppercase tracking-wide transition-colors flex items-center gap-1 ${menuTextClass}`}
@@ -109,12 +109,15 @@ export default function Header() {
           </a>
         </nav>
 
-        <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-full text-[16px] font-extrabold uppercase tracking-wide transition-all active:scale-95 flex items-center gap-2">
+        <Link
+          to="/infaq"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-full text-[16px] font-extrabold uppercase tracking-wide transition-all active:scale-95 flex items-center gap-2"
+        >
           <span className="material-symbols-outlined text-[22px]">
             favorite
           </span>
           Donasi
-        </button>
+        </Link>
       </div>
     </header>
   )
