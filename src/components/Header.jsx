@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import logoMasjid from '../assets/logo.png'
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -48,9 +49,11 @@ export default function Header() {
             solidNavbar ? 'text-primary' : 'text-white'
           }`}
         >
-          <span className="material-symbols-outlined text-[36px]">
-            mosque
-          </span>
+          <img
+            src={logoMasjid}
+            alt="Logo Masjid"
+            className="w-12 h-12 object-contain"
+          />
 
           <div className="leading-tight">
             <p className="text-[17px] font-bold tracking-wide">
