@@ -8,6 +8,8 @@
  * - Logo masjid + deskripsi + social icons
  * - Bottom bar: border-t border-white/10
  */
+import logoMasjid from '../assets/logo.png'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -15,9 +17,9 @@ export default function Footer() {
     {
       title: 'Navigasi',
       links: [
-        { label: 'Tentang Kami', href: '#', featured: true },
-        { label: 'Visi & Misi', href: '#' },
-        { label: 'Pengurus', href: '#' },
+        { label: 'Profil Masjid', href: '/profil', featured: true },
+        { label: 'Visi & Misi', href: '/profil' },
+        { label: 'Pengurus DKM', href: '/profil' },
       ],
     },
     {
@@ -25,15 +27,7 @@ export default function Footer() {
       links: [
         { label: 'Jadwal Salat', href: '#jadwal-salat' },
         { label: 'Dokumentasi', href: '#' },
-        { label: 'Kritik dan Saran', href: 'https://forms.google.com', external: true },
-      ],
-    },
-    {
-      title: 'Bantuan',
-      links: [
-        { label: 'Kebijakan Privasi', href: '#' },
-        { label: 'Hubungi Kami', href: '#' },
-        { label: 'FAQ', href: '#' },
+        { label: 'Kritik dan Saran', href: 'https://forms.gle/zfLuBvJXD4837w6s6', external: true },
       ],
     },
   ]
@@ -44,10 +38,15 @@ export default function Footer() {
       <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between items-start gap-12">
         {/* Brand column */}
         <div className="max-w-xs">
-          <div className="text-headline-md font-headline-md text-on-primary flex items-center gap-2 mb-4">
-            <span className="material-symbols-outlined text-3xl">mosque</span>
-            Masjid Kampus
-          </div>
+        <div className="text-headline-md font-headline-md text-on-primary flex items-center gap-3 mb-4">
+          <img
+            src={logoMasjid}
+            alt="Logo Masjid"
+            className="w-10 h-10 object-contain"
+          />
+
+          <span>Masjid Ikomah</span>
+        </div>
           <p className="text-body-md font-body-md text-on-primary/70 leading-relaxed mb-6">
             Mewujudkan ekosistem spiritual yang inklusif dan progresif bagi seluruh civitas akademika.
           </p>
@@ -94,23 +93,6 @@ export default function Footer() {
               </ul>
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* ── Bottom bar ──────────────────────────────── */}
-      <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-label-md font-label-md text-on-primary/60">
-          © {currentYear} Masjid Kampus. Spiritual Vitality & Growth.
-        </p>
-        <div className="flex items-center gap-2 text-on-primary/40 text-sm">
-          Made with{' '}
-          <span
-            className="material-symbols-outlined text-error text-base"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            favorite
-          </span>{' '}
-          in Kampus Digital
         </div>
       </div>
     </footer>

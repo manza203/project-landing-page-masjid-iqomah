@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 import AdabSection from '../components/AdabSection'
 import JadwalSholat from '../components/JadwalSholat'
 import heroImage from '../assets/masjidIkomah.png'
@@ -126,9 +127,12 @@ export default function Home() {
                       Berkontribusi langsung untuk pengembangan sarana dan
                       prasarana dakwah kampus yang lebih baik.
                     </p>
-                    <button className="bg-white text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-surface transition-colors">
+                    <Link
+                      to="/infaq"
+                      className="inline-flex bg-white text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-surface transition-colors"
+                    >
                       Donasi Sekarang
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 {/* Decorative blur circle */}
