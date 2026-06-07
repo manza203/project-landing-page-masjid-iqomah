@@ -169,7 +169,7 @@ export default function Header() {
             </Link>
 
             <a
-              href="https://forms.google.com"
+              href="https://forms.gle/zfLuBvJXD4837w6s6"
               target="_blank"
               rel="noreferrer"
               className="font-bold text-primary px-4 py-3 rounded-xl hover:bg-surface-container-low flex items-center gap-2"
