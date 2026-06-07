@@ -101,7 +101,7 @@ export default function Header() {
           )}
 
           <a
-            href="https://forms.google.com"
+            href="https://forms.gle/zfLuBvJXD4837w6s6"
             target="_blank"
             rel="noreferrer"
             className={`text-[15px] font-extrabold uppercase tracking-wide transition-colors flex items-center gap-1 ${menuTextClass}`}
