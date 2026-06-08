@@ -52,22 +52,34 @@ export default function Home() {
               <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 border border-secondary-container/30 font-label-md text-label-md mb-6 backdrop-blur-md">
                 Pusat Spiritual Kampus Modern
               </span>
+
               <h1 className="font-display-lg text-display-lg md:text-[64px] mb-6 tracking-tight">
                 Menghidupkan Masjid Digital
               </h1>
+
               <p className="font-body-lg text-body-lg mb-8 text-on-primary/90 leading-relaxed">
                 Sinergi antara teknologi dan spiritualitas untuk menciptakan
                 komunitas muslim kampus yang bertumbuh, harmoni, dan berwawasan
                 masa depan.
               </p>
+
               <div className="flex flex-wrap gap-4">
-                <Button variant="hero-primary">
-                  Jelajahi Masjid{' '}
+                <a
+                  href="#jadwal-salat"
+                  className="group bg-secondary-container text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-primary-fixed-dim transition-colors flex items-center gap-2"
+                >
+                  Jelajahi Masjid
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                     arrow_forward
                   </span>
-                </Button>
-                <Button variant="hero-outline">Tentang Kami</Button>
+                </a>
+
+                <Link
+                  to="/profil"
+                  className="bg-white/10 border border-white/30 text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-white/20 transition-colors"
+                >
+                  Tentang Kami
+                </Link>
               </div>
             </div>
           </div>

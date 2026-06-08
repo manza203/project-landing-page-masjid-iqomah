@@ -9,6 +9,8 @@
  * - Bottom bar: border-t border-white/10
  */
 import logoMasjid from '../assets/logo.png'
+import { FaInstagram, FaYoutube } from 'react-icons/fa'
+import { MdCall } from 'react-icons/md'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -26,7 +28,6 @@ export default function Footer() {
       title: 'Layanan',
       links: [
         { label: 'Jadwal Salat', href: '#jadwal-salat' },
-        { label: 'Dokumentasi', href: '#' },
         { label: 'Kritik dan Saran', href: 'https://forms.gle/zfLuBvJXD4837w6s6', external: true },
       ],
     },
@@ -37,33 +38,53 @@ export default function Footer() {
       {/* ── Main footer content ────────────────────── */}
       <div className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between items-start gap-12">
         {/* Brand column */}
-        <div className="max-w-xs">
-        <div className="text-headline-md font-headline-md text-on-primary flex items-center gap-3 mb-4">
-          <img
-            src={logoMasjid}
-            alt="Logo Masjid"
-            className="w-10 h-10 object-contain"
-          />
+        <div className="max-w-sm">
+          <div className="text-headline-md font-headline-md text-on-primary flex items-center gap-3 mb-4">
+            <img
+              src={logoMasjid}
+              alt="Logo Masjid"
+              className="w-10 h-10 object-contain"
+            />
+            <span>Masjid Ikomah</span>
+          </div>
 
-          <span>Masjid Ikomah</span>
-        </div>
-          <p className="text-body-md font-body-md text-on-primary/70 leading-relaxed mb-6">
-            Mewujudkan ekosistem spiritual yang inklusif dan progresif bagi seluruh civitas akademika.
+          <p className="text-body-md text-on-primary/70 leading-relaxed mb-6">
+            Mewujudkan ekosistem spiritual yang inklusif dan progresif bagi seluruh
+            civitas akademika.
           </p>
-          {/* Social icons */}
-          <div className="flex gap-4">
+
+          <div className="w-16 h-px bg-white/20 mb-6"></div>
+
+          <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-on-primary/80">
+            
+            {/* Nomor Telepon - Tidak Link */}
+            <div className="flex items-center gap-2">
+              <MdCall size={18} />
+              <span>+62 878-3273-7474</span>
+            </div>
+
+            {/* Instagram */}
             <a
-              href="#"
-              className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors text-on-primary"
+              href="https://www.instagram.com/masjid.ikomah?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 hover:text-white transition-colors"
             >
-              <span className="material-symbols-outlined">share</span>
+              <FaInstagram size={18} />
+              <span>@masjid.ikomah</span>
             </a>
+
+            {/* YouTube */}
             <a
-              href="#"
-              className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors text-on-primary"
+              href="https://youtube.com/@masjidikomah?si=-oSHkRfCv9K8GAPX"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 hover:text-white transition-colors"
             >
-              <span className="material-symbols-outlined">language</span>
+              <FaYoutube size={18} />
+              <span>Masjid Ikomah</span>
             </a>
+
           </div>
         </div>
 
