@@ -162,12 +162,12 @@ export default function Home() {
                     Lihat jadwal kajian mingguan, buka bersama, dan kegiatan
                     komunitas lainnya.
                   </p>
-                  <button className="flex items-center gap-2 text-label-md font-label-md hover:underline bg-transparent border-none text-on-primary cursor-pointer p-0">
+                  <Link to="/kegiatan" className="flex items-center gap-2 text-label-md font-label-md hover:underline bg-transparent border-none text-on-primary cursor-pointer p-0">
                     Lihat Semua Program{' '}
                     <span className="material-symbols-outlined text-sm">
                       arrow_forward
                     </span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
