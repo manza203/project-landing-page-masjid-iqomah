@@ -1,8 +1,12 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import qrInfaq from '../assets/qr-infaq.jpg'
+import { useEffect } from 'react'
 
 export default function Infaq() {
+  useEffect(() => {
+    document.title = 'Infaq Digital | Masjid Ikomah'
+  }, [])
   return (
     <div className="bg-background text-on-surface min-h-screen font-sans">
       <Header />

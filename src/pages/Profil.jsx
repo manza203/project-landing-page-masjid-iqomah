@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { useEffect } from 'react'
 
 const pengurus = [
   {
@@ -17,6 +18,9 @@ const pengurus = [
 ]
 
 export default function Profil() {
+  useEffect(() => {
+    document.title = 'Profil Masjid | Masjid Ikomah'
+  }, [])
   return (
     <div className="bg-background text-on-surface min-h-screen font-sans">
       <Header />

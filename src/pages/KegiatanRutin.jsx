@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import fotoInterior from '../assets/interiorMasjid.png'
+import { useEffect } from 'react'
 
 export default function KegiatanRutin() {
     const daftarKegiatan = [
@@ -26,6 +27,9 @@ export default function KegiatanRutin() {
             gambar: "https://images.unsplash.com/photo-1576764402988-7143f9cca90a?auto=format&fit=crop&q=80&w=1000"
         }
     ]
+    useEffect(() => {
+        document.title = 'Kegiatan Rutin | Masjid Ikomah'
+    }, [])
 
     return (
         <div className="bg-background text-on-surface font-sans min-h-screen flex flex-col selection:bg-primary-fixed-dim selection:text-primary">

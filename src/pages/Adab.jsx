@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import interiorMasjid from '../assets/interiorMasjid.png'
+import { useEffect } from 'react'
 
 const adabSections = [
   {
@@ -26,6 +27,10 @@ const adabSections = [
 ]
 
 export default function Adab() {
+  useEffect(() => {
+    document.title = 'Adab Bermasjid | Masjid Ikomah'
+  }, [])
+  
   return (
     <div className="bg-background text-on-surface selection:bg-secondary-container min-h-screen relative font-body-md">
       {/* Background texture */}

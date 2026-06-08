@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import AdabSection from '../components/AdabSection'
 import JadwalSholat from '../components/JadwalSholat'
 import heroImage from '../assets/masjidIkomah.png'
+import { useEffect } from 'react'
 
 /**
  * App — Masjid Kampus Portal (Fresh Forest)
@@ -19,6 +20,10 @@ import heroImage from '../assets/masjidIkomah.png'
  * All tokens follow design.md Fresh Forest palette.
  */
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Masjid Ikomah | Portal Informasi Masjid'
+  }, [])
+
   return (
     <div className="bg-background text-on-surface font-sans min-h-screen selection:bg-primary-fixed-dim selection:text-primary">
       {/* ═══════════════════════════════════════════════════
