@@ -4,14 +4,14 @@ import Footer from '../components/Footer'
 const pengurus = [
   {
     jabatan: 'Ketua DKM',
-    nama: 'Raihan Dwiyuga Fadilah',
-    deskripsi: 'Tinggal Isi.',
+    nama: 'Drs. Zaenal Muttaqin, M. Ag',
+    deskripsi: '',
     icon: 'account_circle',
   },
   {
     jabatan: 'Sekretaris DKM',
-    nama: 'Halow',
-    deskripsi: 'Tinggal Isi.',
+    nama: 'User',
+    deskripsi: '',
     icon: 'edit_note',
   },
 ]
